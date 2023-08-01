@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Place - Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Pizza Place</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Customize Your Pizza</h2>
+    <form action="submit_order.php" method="post">
+        <img src="https://www.twopeasandtheirpod.com/wp-content/uploads/2021/03/Veggie-Pizza-8.jpg" alt="Customize Your Pizza" class="order-image">
+        <label for="size">Size:</label>
+        <select name="size" id="size" required>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+
+        <label for="crust">Crust:</label>
+        <input type="radio" name="crust" value="thin" required> Thin
+        <input type="radio" name="crust" value="thick" required> Thick
+
+        <label for="sauce">Sauce:</label>
+        <input type="checkbox" name="sauce" value="tomato"> Tomato
+        <input type="checkbox" name="sauce" value="pesto"> Pesto
+
+        <label for="cheese">Cheese:</label>
+        <input type="checkbox" name="cheese" value="mozzarella"> Mozzarella
+        <input type="checkbox" name="cheese" value="cheddar"> Cheddar
+
+        <label for="toppings">Toppings:</label>
+        <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni
+        <input type="checkbox" name="toppings" value="mushrooms"> Mushrooms
+        <input type="checkbox" name="toppings" value="onions"> Onions
+
+        <label for="special_instructions">Special Instructions:</label>
+        <textarea name="special_instructions" id="special_instructions" rows="4" cols="50"></textarea>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" required>
+
+        <label for="address">Delivery Address:</label>
+        <input type="text" name="address" id="address" required>
+
+        <label for="delivery">Delivery or Pickup:</label>
+        <input type="radio" name="delivery" value="delivery" required> Delivery
+        <input type="radio" name="delivery" value="pickup" required> Pickup
+
+        <label for="delivery_time">Delivery Time:</label>
+        <input type="time" name="delivery_time" id="delivery_time">
+
+        <input type="submit" value="Place Order">
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2023 Pizza Place. All rights reserved.</p>
+</footer>
+</body>
+</html>

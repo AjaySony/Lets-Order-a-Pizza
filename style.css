@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about, .menu, .contact {
+    padding: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+header {
+    background-color: #FF5733;
+    color: #fff;
+}
+
+.hero {
+    background-color: #FFAB33;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.menu {
+    background-color: #FFC633;
+}
+
+.menu h2 {
+    font-size: 28px;
+}
+
+.menu p {
+    font-size: 16px;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-item img {
+    width: 100%;
+}
+
+main {
+    background-color: #33FF8F;
+    padding: 30px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #33FF3C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1AC50D;
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        grid-template-columns: 1fr;
+    }
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+
+.order-image {
+    max-width: 80%;
+    height: 80%;
+    display: block;
+    margin: 0 auto;
+}
